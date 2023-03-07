@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.aside {
+  background: #000;
+  width: 10%;
+  height: 100vh;
+  color: white;
+  z-index: 2;
+}
+
+.tag__link {
+  padding: 10px 20px 10px;
+  border-bottom: 1px solid #5c5c5c;
+  font-weight: 700;
+  size: 1rem;
+  color: #aaaaaa;
+  text-align: left;
+  list-style: none;
+}
+
+.tag__link:hover {
+  background-color: #5c5c5c;
+  cursor: pointer;
+  color: white;
+}
+
+ul li.tag__link:first-child {
+  cursor: pointer;
+  color: white;
+}

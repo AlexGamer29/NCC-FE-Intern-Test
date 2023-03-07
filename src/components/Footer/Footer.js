@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer class="footer">
-      <p>copyright © 2021</p>
+      <p>Copyright © 2021</p>
     </footer>
   );
 }

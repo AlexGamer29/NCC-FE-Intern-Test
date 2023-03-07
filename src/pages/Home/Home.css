@@ -1,3 +1,9 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
 .main__content {
   padding-top: 20px;
   display: flex;
@@ -5,45 +11,117 @@
   justify-content: space-between;
 }
 
-
 main {
-    width: 80%;
-    padding: 10px 100px;
-    height: auto;
+  width: 80%;
+  padding: 10px 100px;
+  height: auto;
 }
 
 /* Logo */
-.main__logo{
-    display: flex;
-    margin: 0 auto;
+.main__logo {
+  display: flex;
+  margin: 0 auto;
 }
-
 
 /* Second section */
-.main__introduction{
-    background: #ececec;
-    padding: 40px 50px;
-    text-align: center;
+.main__introduction {
+  background: #ececec;
+  padding: 40px 50px;
+  text-align: center;
 }
 
-.main__introduction p{
-    width: 70%;
-    margin: 10px auto;
+.main__introduction p {
+  width: 70%;
+  margin: 10px auto;
 }
 
 /* Third section */
-.main__content-detail{
-    width: 30%;
+.main__content-detail {
+  width: 30%;
 }
 
-.content__detail-heading{
-    margin-bottom: 10px;
-    font-size: 1.2rem;
+.content__detail-heading {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
-.content__text-img{
-    width: 100px;
-    height: 100px;
-    float: left;
-    object-fit: contain;
+.content__text-img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  object-fit: contain;
+}
+
+/*Tablet*/
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .navbar__active {
+    display: none;
+  }
+  .btn__menu {
+    display: block;
+  }
+  .main {
+    width: 100%;
+    padding: 10px 50px;
+    height: 100vh;
+    font-size: 0.9rem;
+  }
+  .main__content {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: black;
+    text-align: center;
+    width: 60%;
+    padding: 30px;
+    border-top: 1px solid #ccc;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 46.1875em) {
+  .navbar__active {
+    display: none;
+  }
+  .btn__menu {
+    display: block;
+  }
+
+  .main {
+    width: 100%;
+    padding: 10px 50px;
+    height: 300vh;
+    margin-bottom: 50px;
+  }
+  .main__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__introduction p {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .main__content-detail {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    position: sticky;
+    bottom: 0;
+    color: black;
+    text-align: center;
+    width: 60%;
+    padding: 30px;
+    border-top: 1px solid #ccc;
+  }
+
+  .section {
+    max-height: 700px;
+  }
 }

@@ -1,0 +1,47 @@
+main {
+  width: 80%;
+  padding: 10px 100px;
+  height: auto;
+}
+
+.main__content {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Logo */
+.main__logo {
+  display: flex;
+  margin: 0 auto;
+}
+
+/* Second section */
+.main__introduction {
+  background: #ececec;
+  padding: 40px 50px;
+  text-align: center;
+}
+
+.main__introduction p {
+  width: 70%;
+  margin: 10px auto;
+}
+
+/* Third section */
+.main__content-detail {
+  width: 30%;
+}
+
+.content__detail-heading {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.content__text-img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  object-fit: contain;
+}

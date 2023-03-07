@@ -1,15 +1,15 @@
 import React from "react";
-import "./SideBar.css"
+import "./SideBar.css";
 
 function SideBar() {
   return (
-    <aside class="aside navbar__active">
+    <aside className="aside navbar__active">
       <ul>
-        <li class="tag__link active">Home</li>
-        <li class="tag__link">Services</li>
-        <li class="tag__link">News</li>
-        <li class="tag__link">Blog</li>
-        <li class="tag__link">Contact</li>
+        <li className="tag__link active">Home</li>
+        <li className="tag__link">Services</li>
+        <li className="tag__link">News</li>
+        <li className="tag__link">Blog</li>
+        <li className="tag__link">Contact</li>
       </ul>
     </aside>
   );

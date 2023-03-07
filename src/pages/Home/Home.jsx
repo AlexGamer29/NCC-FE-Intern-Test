@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Sidebar, Footer } from "../../components";
 import "./Home.css";
 
@@ -8,12 +8,12 @@ function Home() {
   return (
     <>
       <div className="container">
-        <Sidebar />
-        <main class="main">
-          <img class="main__logo" src={Logo} alt="img" />
+        <Sidebar/>
+        <main className="main">
+          <img className="main__logo" src={Logo} alt="img" />
           <section>
-            <div class="main__introduction">
-              <strong class="main__introduction-title">
+            <div className="main__introduction">
+              <strong className="main__introduction-title">
                 Lorem ipsum dolor sit asmet?
               </strong>
               <p>
@@ -33,12 +33,12 @@ function Home() {
 
           <section>
             <div className="main__content">
-              <div class="main__content-detail">
-                <div class="content__detail-heading">
+              <div className="main__content-detail">
+                <div className="content__detail-heading">
                   <strong>Lorem Ipsum is simply dummy</strong>
                 </div>
-                <div class="content__text">
-                  <img class="content__text-img" src={Css} alt="img" />
+                <div className="content__text">
+                  <img className="content__text-img" src={Css} alt="img" />
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -50,12 +50,12 @@ function Home() {
                   </p>
                 </div>
               </div>
-              <div class="main__content-detail">
-                <div class="content__detail-heading">
+              <div className="main__content-detail">
+                <div className="content__detail-heading">
                   <strong>Lorem Ipsum is simply dummy</strong>
                 </div>
-                <div class="content__text">
-                  <img class="content__text-img" src={Html} alt="img" />
+                <div className="content__text">
+                  <img className="content__text-img" src={Html} alt="img" />
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -67,12 +67,12 @@ function Home() {
                   </p>
                 </div>
               </div>
-              <div class="main__content-detail">
-                <div class="content__detail-heading">
+              <div className="main__content-detail">
+                <div className="content__detail-heading">
                   <strong>Lorem Ipsum is simply dummy</strong>
                 </div>
-                <div class="content__text">
-                  <img class="content__text-img" src={Url} alt="img" />
+                <div className="content__text">
+                  <img className="content__text-img" src={Url} alt="img" />
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
